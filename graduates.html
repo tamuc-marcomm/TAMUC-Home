@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en-US" class="html-bg">
+
+<head>
+    <meta charset="utf-8">
+    <!-- Force Compatible -->
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="cache-control" content="no-cache, no-store, must-revalidate">
+    <!-- tells browser not to cache -->
+    <meta http-equiv="expires" content="0">
+    <!-- says that the cache expires 'now' -->
+    <meta http-equiv="pragma" content="no-cache">
+    <!-- says not to use cached stuff, if there is any -->
+    <meta content="Texas,A&amp;M,University,Commerce,Academic,Student,Affairs,Honors,Program,college,arts,science,Agricultural Sciences,Art,Photography,Bible,Biological &amp; Earth Sciences,Chemistry,Communication,Theatre,KETV,KKOM,Computer,Science,Information,Systems,Freshman,Success,Seminar,History,Journalism,Printing,Literature,Languages,Communication,Skills,Mathematics,Math,Music,Physics,Laboratory,Political,Science,Social,Work,Sociology,Criminal,Justice,Accounting,Bank,Operations,Institute,Economics,Finance,General,Business,Systems,Management,Industrial,Engineering,Technology, Marketing,Management,Masters,Business,Administration,Program MBA,Online Educator,Certification,Academic,Services,Counseling,Educational,Administration,Elementary,Education,Health,Physical,Education,Psychology,Special,Education,Secondary,Higher,Education,Health,Science,Technology,Financial,aid,instructional,technology,distance,Orientation, Registrar" name="keywords" />
+    <meta content="Texas A&amp;M University-Commerce is a four year university offering more than one hundred courses of study from 26 academic departments." name="description" />
+    <meta content="g1C4AG1kEhZ_j5FgAZBB3hNe8kVM7X_rgL97Zhcrhb8" name="google-site-verification" />
+    <title>Texas A&amp;M University-Commerce</title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link href="css_RES/font-awesome.min.css" rel="stylesheet">
+    <!-- bxslider -->
+    <link type="text/css" rel='stylesheet' href="js_RES/bxslider/jquery.bxslider.css">
+    <!-- Bootstrap css -->
+    <link type="text/css" rel='stylesheet' href="css_RES/bootstrap.min.css">
+    <link type="text/css" rel='stylesheet' href="js_RES/bootstrap-progressbar/bootstrap-progressbar-3.2.0.min.css">
+    <!-- End Bootstrap css -->
+    <!-- Jquery UI css -->
+    <link type="text/css" rel='stylesheet' href="js_RES/jqueryui/jquery-ui.css">
+    <!-- <link type="text/css" rel='stylesheet' href="js/jqueryui/jquery-ui.structure.css"> -->
+    <!-- End Jquery UI css -->
+    <!-- Fancybox -->
+    <link type="text/css" rel='stylesheet' href="js_RES/fancybox/jquery.fancybox.css">
+    <!-- End Fancybox -->
+    <link type="text/css" rel='stylesheet' href="fonts/fonts.css">
+    <link type="text/css" data-themecolor="default" rel='stylesheet' href="css_RES/main-default.css">
+    <link type="text/css" rel='stylesheet' href="js_RES/rs-plugin/css/settings.css">
+    <link type="text/css" rel='stylesheet' href="js_RES/rs-plugin/css/settings-custom.css">
+    <script src="js_RES/jquery/jquery-1.11.1.min.js"></script>
+    <script src="js_RES/modules/modernizr.js"></script>
+    <style type="text/css">
+    header {
+        background-color: #192857;
+    }
+    
+    #header-container {
+        margin: 0 auto;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        max-width: 1200px;
+        overflow: hidden
+    }
+    
+    #header-sidebar {
+        cursor: pointer;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        float: right;
+        text-align: right;
+    }
+    
+    #header-sidebar ul {
+        margin-top: 0px
+    }
+    
+    #header-container {
+        padding-top: 0px;
+        padding-bottom: 0px;
+        position: relative;
+    }
+    
+    #site-header #header-wrapper {
+        border: none;
+        min-height: 30px;
+    }
+    
+    #site-utility .search_button {
+        line-height: 16px;
+        color: #fff;
+    }
+    
+    #site-utility {
+        float: right;
+    }
+    
+    #site-logo {
+        padding-top: 8px;
+        padding-bottom: 8px;
+        position: absolute;
+        z-index: 10;
+    }
+    
+    #trigger-header-mainNav {
+        float: right;
+        color: #fff;
+        line-height: 16px;
+        margin: 0px 24px 0px 24px;
+        font-size: 14px
+    }
+    
+    @media (max-width: 768px) {
+        #scroll-sidebar {
+            display: none
+        }
+    }
+    
+    .overlay-link {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .b-block-fullHeight {
+        padding: 0px;
+    }
+    
+    .b-bg-block .container {
+        width: 75%;
+        max-width: 1200px;
+    }
+    
+    .b-bg-block img {
+        max-width: 100%;
+    }
+    
+    .b-bg-block-ourpride {
+        background-image: url("img/campaign/blue-yellow.jpg");
+    }
+    
+    .b-bg-block-deicatedsuccess {
+        background-image: url("img/campaign/light-board.jpg");
+    }
+    
+    .b-bg-block-accessible {
+        background-image: url("img/campaign/dark-stadium.jpg");
+    }
+    
+    .b-bg-block-proven {
+        background-image: url("img/campaign/dark-stadium.jpg");
+    }
+    
+    .b-bg-block-academic {
+        background-image: url("img/campaign/light-grad.jpg");
+    }
+    
+    .b-bg-block-video {
+        background-color: #132333;
+    }
+    
+    .b-bg-block-dark,
+    .b-bg-block-none {
+        color: #093979;
+    }
+    
+    .b-bg-block-none {
+        background-color: #fff;
+    }
+    
+    .b-btn-primary {
+        border: none;
+    }
+    
+    .b-bg-block-dark .b-btn-primary,
+    .b-btn-primary.b-btn-dark {
+        color: #ffffff;
+        background-color: #093979;
+    }
+    
+    #campaign-video-block {
+        position: relative;
+    }
+    
+    .video-volume-controls {
+        position: absolute;
+        z-index: 3;
+        top: 0px;
+        padding: 10px;
+    }
+    
+    #video-campaign-volUp {
+        display: none;
+    }
+    
+    #scroll-sidebar {
+        position: absolute;
+        top: 60%;
+        right: 0px;
+        text-align: right;
+    }
+    
+    #scroll-sidebar ul {
+        list-style: none;
+    }
+    
+    #scroll-sidebar a {
+        padding: 8px 6px;
+        background: #E4C02F;
+        display: inline-block;
+        width: 100px;
+        margin-top: 10px;
+        font-size: 14px;
+        border: 1px solid #fff;
+        text-align: center;
+        font-weight: bold;
+        color: #00314C;
+        box-shadow: 0px 0px 30px #888;
+    }
+    
+    #scroll-sidebar a:hover {
+        background-color: #F1BD33;
+    }
+    
+    #fundingList {
+        text-align: left;
+        max-width: 800px;
+        margin: auto;
+        margin: 50px auto;
+    }
+    
+    #fundingList ul {
+        padding-left: 15px
+    }
+    
+    #fundingList h4 {
+        font-weight: bold;
+    }
+    
+    #fundingList .b-accordion__content li {
+        font-size: 1em;
+        line-height: 1.8em;
+        list-style: none;
+    }
+    
+    .b-accordion.ui-accordion .ui-accordion-header {
+        border: 1px solid #CECECE;
+        background-color: #e5e5e5;
+    }
+    
+    @media screen and (min-width: 768px) {
+        .b-categories-icons > .b-column {
+            width: 30%;
+        }
+    }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div id="header-container" class="clearfix container">
+            <a href="http://tamuc.edu/" class="overlay-link"></a>
+            <div id="site-logo">
+                <a href="http://tamuc.edu/"> <img src="img/tamuc-logo-wide.svg" width="280" height="auto" alt="Tamuc News" class="default-logo" onerror="this.onerror=null; this.src='img/tamuc-logo-wide.png'" /> </a>
+            </div>
+            <div id="header-sidebar" class="clearfix">
+                <div id="site-utility">
+                    <span class="fa fa-search search_button"></span>
+                </div>
+                <!--<a href="#" id="trigger-header-mainNav">MENU</a>-->
+            </div>
+        </div>
+    </header>
+    <div class="l-inner-page-container b-block-fullHeight">
+        <div>
+            <section class="b-bg-block f-bg-block b-bg-block-video b-block-fullHeight">
+                <div class="f-center">
+                    <div id="campaign-video-block">
+                        <div>
+                            <video id="campaign-video" autoplay="autoplay" style="width: 100%" poster="img/slider/ourPride-runsDeep.jpg" muted="muted">
+                                <source src="img/slider/1360x503_5_9.mp4" type='video/mp4' /> Your browser does not support the video tag.
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/d4xn-UbLHvs" frameborder="0" allowfullscreen></iframe>
+                            </video>
+                        </div>
+                        <div class="video-volume-controls">
+                            <span id="video-campaign-volUp" class="fa fa-volume-up b-bg-video__play_btn  f-bg-video__play_btn"></span>
+                            <span id="video-campaign-volOff" class="fa fa-volume-off b-bg-video__play_btn  f-bg-video__play_btn"></span>
+                        </div>
+                    </div>
+                    <script>
+                    jQuery(document).ready(function($) {
+                        $("#video-campaign-volOff").bind("click", function() {
+                            $("#video-campaign-volUp").show();
+                            $("#campaign-video").load();
+                            $("#campaign-video").prop('muted', false);
+                            $(this).hide();
+                        });
+                        $("#video-campaign-volUp").bind("click", function() {
+                            $("#video-campaign-volOff").show();
+                            $("#campaign-video").prop('muted', true)
+                            $(this).hide();
+                        });
+
+                        var offset = $("#scroll-sidebar").offset();
+                        var topPadding = 200;
+                        $(window).scroll(function() {
+                            if ($(window).scrollTop() > offset.top) {
+                                $("#scroll-sidebar").stop().animate({
+                                    marginTop: $(window).scrollTop() - offset.top + topPadding
+                                });
+                            } else {
+                                $("#scroll-sidebar").stop().animate({
+                                    marginTop: 0
+                                });
+                            };
+                        });
+                    });
+                    </script>
+            </section>
+            <section class="b-bg-full-primary">
+                <div class="container">
+                    <div id="scroll-sidebar">
+                        <ul>
+                            <li><a href="#scrollObj">Request Info</a></li>
+                        </ul>
+                    </div>
+                    <div style="max-width: 600px; margin: auto;">
+                        <div class="b-categories-icons">
+                            <div class="b-categories-icons">
+                                <div class="b-categories-icons__item f-categories-icons__item b-column">
+                                    <a class="b-categories-icons__item_link" href="http://www.tamuc.edu/academics/graduateSchool/applyOnline.aspx" onClick="ga('send', 'event', { eventCategory: 'button', eventAction: 'clicked', eventLabel: 'freshmenapplytoday'});">
+                                        <div class="b-categories-icons__item_icon f-categories-icons__item_icon fade-in-animate">
+                                            <span class="fa fa-graduation-cap"></span>
+                                        </div>
+                                        <div class="b-remaining b-categories-icons__item_text">
+                                            <div class="b-categories-icons__item_name f-categories-icons__item_name f-secondary-b">Apply Today</div>
+                                            <div class="b-categories-icons__item_info f-categories-icons__item_info f-secondary-l">Join our Lion pride!</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="b-categories-icons__item f-categories-icons__item b-column">
+                                    <a class="b-categories-icons__item_link" href="http://www.tamuc.edu/admissions/oneStopShop/orientation/NewStudentOrientationProspectiveStudentExperience/CampusVisits/default.aspx" onClick="ga('send', 'event', { eventCategory: 'button', eventAction: 'clicked', eventLabel: 'freshmenscheduleavisit'});">
+                                        <div class="b-categories-icons__item_icon f-categories-icons__item_icon fade-in-animate">
+                                            <span class="fa fa-car"></span>
+                                        </div>
+                                        <div class="b-remaining b-categories-icons__item_text">
+                                            <div class="b-categories-icons__item_name f-categories-icons__item_name f-secondary-b">Schedule a Visit</div>
+                                            <div class="b-categories-icons__item_info f-categories-icons__item_info f-secondary-l">Come see what's in store for you.</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="b-categories-icons__item f-categories-icons__item b-column">
+                                    <a class="b-categories-icons__item_link" href="#scrollObj" onClick="ga('send', 'event', { eventCategory: 'button', eventAction: 'clicked', eventLabel: 'freshmenrequestinformation'});">
+                                        <div class="b-categories-icons__item_icon f-categories-icons__item_icon fade-in-animate">
+                                            <span class="fa fa-info"></span>
+                                        </div>
+                                        <div class="b-remaining b-categories-icons__item_text">
+                                            <div class="b-categories-icons__item_name f-categories-icons__item_name f-secondary-b">Request Info</div>
+                                            <div class="b-categories-icons__item_info f-categories-icons__item_info f-secondary-l">Let us know what you're interested in.</div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+            <section class="b-bg-block f-bg-block b-bg-block-ourpride parallax-section-bg">
+                <div class="container f-center">
+                    <h1 class="f-primary-b">Texas A&M University-Commerce is FUNDING YOUR FUTURE!</h1>
+                    <div class="b-bg-block__desc f-bg-block__desc f-primary">
+                        <p>Texas A&M University-Commerce helps students across North Texas achieve success by bringing higher education within reach. With up to $3000 per student in scholarships and free courses available now, graduate education has never been more accessible.</p>
+                    </div>
+                    <a class="b-btn f-btn b-btn-md f-btn-md b-btn-primary f-primary-sb j-data-element" data-animate="shake" href="http://www.tamuc.edu/academics/graduateSchool/funding/scholarships/fundingfuture/">  Apply for free college courses today!</a>
+                </div>
+            </section>
+            <section class="b-bg-block f-bg-block b-bg-block-deicatedsuccess parallax-section-bg b-bg-block-dark">
+                <div class="container f-center">
+                    <h1 class="f-primary-b">Get Graduate education that fits your life</h1>
+                    <div class="b-bg-block__desc f-bg-block__desc f-primary">
+                        <p>Through our main campus, our six off-site locations across northeast Texas, and a robust online curriculum, we create a graduate learning environment that will fit into your life. We offer more than 40 accredited, nationally recognized programs, including doctorates, masters, graduate certificates and educator certification. We provide more than $24,000,000 in tuition assistance every year to bring our students’ ambitions within reach. By focusing on providing quality graduate education that is both accessible and affordable we create a unique opportunity and provide top value for every tuition dollar.</p>
+                        <p>Talk with one of our graduate admissions recruiters and get more information on graduate programs.</p>
+                    </div>
+                    <a class="b-btn f-btn b-btn-md f-btn-md b-btn-primary f-primary-sb j-data-element" data-animate="shake" href="http://www.tamuc.edu/academics/graduateSchool/graduateRecruiters.aspx">  Talk with a recruiter </a>
+                </div>
+            </section>
+            <section class="b-bg-block f-bg-block b-bg-block-proven parallax-section-bg">
+                <div class="container f-center">
+                    <h1 class="f-primary-b">Summer registration is happening now</h1>
+                    <div class="b-bg-block__desc f-bg-block__desc f-primary">
+                        <p>Registration for the 2016 Summer and Summer Mini terms is now open for graduate students. Funding opportunities and course space may be limited so register today!</p>
+                    </div>
+                    <a class="b-btn f-btn b-btn-md f-btn-md b-btn-primary f-primary-sb j-data-element" data-animate="shake" href="http://www.tamuc.edu/academics/graduateSchool/programs/default.aspx">  Get more information on available programs</a>
+                </div>
+            </section>
+            <link rel="stylesheet" type="text/css" href="http://www.tamuc.edu/files/css_RES/collapsible_list.css">
+            <section class="b-bg-block f-bg-block b-bg-block-none">
+                <div class="container f-center">
+                    <h1 class="f-primary-b">Find out what funding opportunities are available! See below</h1>
+                    <div class="b-bg-block__desc f-bg-block__desc f-primary">
+                        <div id="fundingList">
+                            <div class="j-accordion b-accordion b-accordion--with-standard-icon f-accordion b-accordion--smallindent">
+                                <h3 class="b-accordion__title f-accordion__title">Funding Your Future – Free Graduate May Mini Courses 2016</h3>
+                                <div class="b-accordion__content">
+                                    <ul>
+                                        <li><a href="future-semesters/freeAGcourseMayMini2016.aspx" title="Free May Mini Ag Course">Free May Mini Ag Course</a></li>
+                                        <li><a href="future-semesters/freeDoctoralcoursesMayMini2016.aspx" title="May Mini Doctoral Courses">Free May Mini Doctoral Courses</a></li>
+                                    </ul>
+                                </div>
+                                <h3 class="b-accordion__title f-accordion__title">Funding Your Future – Free Graduate Courses for Texas Teachers </h3>
+                                <div class="b-accordion__content">
+                                    <h4>May Mini 2016</h4>
+                                    <ul>
+                                        <li><a href="http://www.tamuc.edu/academics/graduateSchool/funding/scholarships/fundingfuture/future-semesters/freecourseartMayMini2016.aspx">Free Art Graduate Course for Texas Inservice and Preservice Teachers May Mini 2016</a></li>
+                                        <li><a href="http://www.tamuc.edu/academics/graduateSchool/funding/scholarships/fundingfuture/future-semesters/freecourserdgMayMini2016.aspx">Free Reading Graduate Course for Texas Inservice and Preservice Teachers May Mini 2016</a></li>
+                                    </ul>
+                                    <h4>Summer 2016</h4>
+                                    <ul>
+                                        <li><a href="future-semesters/freecourseArtSummer2016.aspx">Free Art Graduate Courses for Texas Inservice and Preservice Teachers Summer 2016</a></li>
+                                        <li><a href="future-semesters/freecoursemathscienceSummer2016.aspx">Free Math or Science Graduate Courses for Texas Inservice and Preservice Teachers&nbsp;Summer 2016</a></li>
+                                        <li><a href="future-semesters/freecourseEDCISummer2016.aspx">Free Bilingual and Curriculum and Instruction Graduate Courses for Texas Inservice and Preservice Teachers&nbsp;Summer 2016</a></li>
+                                        <li><a href="future-semesters/freecourseEnglishSummer20161.aspx">Free English Graduate Courses for Texas Inservice and Preservice Teachers Summer 2016</a></li>
+                                        <li><a href="future-semesters/freecourseHistorySummer2016.aspx">Free History Graduate Courses for Texas Inservice and Preservice Teachers Summer 2016</a></li>
+                                        <li><a href="future-semesters/freecourseMusicSummer2016.aspx">Free Music Graduate Courses for Texas Inservice and Preservice Teachers Summer 2016</a></li>
+                                        <li><a href="future-semesters/freeSPAcourseSummer2016.aspx">Free Spanish Courses&nbsp;for Texas Inservice and Preservice Teachers&nbsp;Summer 2016</a></li>
+                                        <li><a href="future-semesters/freespedcourseSummer2016.aspx">Free Special Education Course for Texas Inservice and Preservice Teachers&nbsp;Summer 2016</a></li>
+                                        <li><a href="future-semesters/freecourseTheatreSummer2016.aspx">Free Theatre Graduate Courses for Texas Inservice and Preservice Teachers Summer 2016</a></li>
+                                    </ul>
+                                    <h4>Fall 2016</h4>
+                                    <ul>
+                                        <li><a href="future-semesters/freecourseArtFall-2016.aspx">Free Art Graduate Courses for Texas Inservice and Preservice Teachers Fall 2016</a></li>
+                                        <li><a href="future-semesters/freecoursemathscienceFall-2016.aspx">Free Math or Science Graduate Courses for Texas Inservice and Preservice Teachers Fall 2016</a></li>
+                                        <li><a href="future-semesters/freecourseEDCIFall-2016.aspx">Free Bilingual and Curriculum and Instruction Graduate Courses for Texas Inservice and Preservice Teachers&nbsp;Fall&nbsp;2016</a></li>
+                                        <li><a href="future-semesters/freecourseEnglishFall-2016.aspx">Free English Graduate Courses for Texas Inservice and Preservice Teachers Fall 2016</a></li>
+                                        <li><a href="future-semesters/freecoursHistoryFall-2016.aspx">Free History Graduate Courses for Texas Inservice and Preservice Teachers Fall 2016</a></li>
+                                        <li><a href="future-semesters/freecourseMusicFall-2016.aspx">Free Music Graduate Courses for Texas Inservice and Preservice Teachers Fall 2016</a></li>
+                                        <li><a href="future-semesters/freeSPAcourseFall-2016.aspx">Free Spanish Courses&nbsp;for Texas Inservice and Preservice Teachers Fall&nbsp;2016</a></li>
+                                        <li><a href="future-semesters/freespedcourseFall-2016.aspx">Free Special Education Course for Texas Inservice and Preservice Teachers Fall&nbsp;2016</a></li>
+                                        <li><a href="future-semesters/freecourseTheatreFall-2016.aspx">Free Theatre Graduate Courses for Texas Inservice and Preservice Teachers Fall 2016</a></li>
+                                    </ul>
+                                </div>
+                                <h3 class="b-accordion__title f-accordion__title">Funding Your Future – Competitive Graduate Scholarships </h3>
+                                <div class="b-accordion__content">
+                                    <h4>Masters Competitive Scholarships Fall 2016</h4>
+                                    <ul>
+                                        <li><a href="future-semesters/scholarship-AGform Fall 2016.aspx">Agricultural Sciences</a></li>
+                                        <li><a href="future-semesters/scholarship-ACform Fall 2016.aspx">Applied Criminology</a></li>
+                                        <li><a href="future-semesters/scholarship-BSform Fall 2016.aspx">Biological Sciences</a></li>
+                                        <li><a href="future-semesters/scholarship-CHEMform Fall 2016.aspx">Chemistry</a></li>
+                                        <li><a href="http://www.tamuc.edu/academics/graduateSchool/funding/scholarships/fundingfuture/future-semesters/scholarship-HIEDform%20Fall%202016.aspx">Higher Education</a></li>
+                                        <li><a href="future-semesters/scholarship-MATHform Fall 2016.aspx">Mathematics</a></li>
+                                        <li><a href="future-semesters/scholarship-ARTform Fall 2016.aspx">MFA</a></li>
+                                        <li><a href="future-semesters/scholarship-PHYSform Fall 2016.aspx">Physics</a></li>
+                                    </ul>
+                                    <h4>Doctoral Competitive Scholarships Fall 2016</h4>
+                                    <ul>
+                                        <li><a href="future-semesters/scholarship-COUNform Fall 2016.aspx">Counseling</a></li>
+                                        <li><a href="future-semesters/scholarship-EPSYform Fall 2016.aspx">Educational Psychology</a></li>
+                                        <li><a href="future-semesters/scholarship-ENGform Fall 2016.aspx">English</a></li>
+                                        <li><a href="future-semesters/scholarship-SCIEform Fall 2016.aspx">SCI-Elementary Education</a></li>
+                                        <li><a href="future-semesters/scholarship-HELDform Fall 2016.aspx">Higher Education Leadership</a></li>
+                                    </ul>
+                                </div>
+                                <h3 class="b-accordion__title f-accordion__title">Other Funding Opportunities</h3>
+                                <div class="b-accordion__content">
+                                    <ul>
+                                        <li>
+                                            <a href="http://www.tamuc.edu/admissions/tuitionCosts/financialAidandScholarships/scholarships/TexasAMUniversityCommerceScholarships/prideScholarships.aspx">GPRIDE Scholarship</a>
+                                        </li>
+                                        <li>
+                                            <a href="http://www.tamuc.edu/admissions/tuitionCosts/financialAidandScholarships/Financial%20Aid%20and%20Work%20Study/GraduateStudentAid.aspx">Texas Graduate Tuition Set-Aside Grants</a>
+                                        </li>
+                                        <li>
+                                            <a href="http://www.tamuc.edu/aboutus/alumni/scholarship-opportunities-/scholarship-opportunities.aspx">Texas A&amp;M University-Commerce Alumni Scholarships</a>
+                                        </li>
+                                        <li>
+                                            <a href="http://www.tamuc.edu/academics/graduateSchool/funding/scholarships/seniorrolloverscholarship.aspx">Senior Rollover Scholarship</a>
+                                        </li>
+                                        <li>
+                                            <a href="http://www.tamuc.edu/academics/graduateSchool/funding/scholarships/doctoralrolloverscholarship.aspx">Doctoral Rollover Scholarship</a>
+                                        </li>
+                                        <li><a href="http://www.tamuc.edu/academics/colleges/humanitiesSocialSciencesArts/departments/literatureLanguages/graduate/tesolcompetitivescholarship.aspx">TESOL Scholarship</a></li>
+                                        <li><a href="http://www.tamuc.edu/academics/graduateSchool/funding/default.aspx">Other Funding Opportunities</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="b-btn f-btn b-btn-md f-btn-md b-btn-primary b-btn-dark f-primary-sb j-data-element" data-animate="shake" href="http://www.tamuc.edu/academics/graduateSchool/applyOnline.aspx">  Register now </a>
+                </div>
+            </section>
+            <section class="b-bg-block f-bg-block b-bg-block-academic parallax-section-bg b-bg-block-dark">
+                <div class="container f-center">
+                    <h1 class="f-primary-b">We are a vibrant academic community</h1>
+                    <div class="b-bg-block__desc f-bg-block__desc f-primary">We believe that our students and faculty comprise one team toward success. With residence halls, more than 120 clubs and organizations, an engaging Fraternity and Sorority community, a variety of intramural sports, and more than 1000 extracurricular activities, campus life develops the whole student. With fourteen collegiate sports teams competing in NCAA Division II earning 58 Lone Star Conference championships and 5 national championships, Lion pride brings students together. At a university with a diverse, yet drawn together student body and a faculty that will know your name, you will graduate with friends and memories as well as your degree. Come see how we create a personal connection to our students’ education.
+                    </div>
+                    <a class="b-btn f-btn b-btn-md f-btn-md b-btn-primary f-primary-sb j-data-element" data-animate="shake" href="http://www.tamuc.edu/CampusLife/default.aspx">  Campus Life & Student Development </a>
+                </div>
+            </section>
+            <section class="b-bg-block f-bg-block b-bg-block-education" id="scrollObj">
+                <div class="container f-center">
+                    <h1 class="f-secondary-b">Get Started today.</h1>
+                    <div class="b-bg-block__desc f-bg-block__desc f-secondary">
+                        <u>Request Information </u>
+                    </div>
+                    <div id="requestForm" class="hidden"></div>
+                </div>
+            </section>
+            <section class="b-bg-full-primary">
+                <div class="container">
+                    <div style="max-width: 600px; margin: auto;">
+                        <div class="b-categories-icons">
+                            <div class="b-categories-icons">
+                                <div class="b-categories-icons__item f-categories-icons__item b-column">
+                                    <a class="b-categories-icons__item_link" href="http://www.tamuc.edu/academics/graduateSchool/applyOnline.aspx" onClick="ga('send', 'event', { eventCategory: 'button', eventAction: 'clicked', eventLabel: 'freshmenapplytoday'});">
+                                        <div class="b-categories-icons__item_icon f-categories-icons__item_icon fade-in-animate">
+                                            <span class="fa fa-graduation-cap"></span>
+                                        </div>
+                                        <div class="b-remaining b-categories-icons__item_text">
+                                            <div class="b-categories-icons__item_name f-categories-icons__item_name f-secondary-b">Apply Today</div>
+                                            <div class="b-categories-icons__item_info f-categories-icons__item_info f-secondary-l">Join our Lion pride!</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="b-categories-icons__item f-categories-icons__item b-column">
+                                    <a class="b-categories-icons__item_link" href="http://www.tamuc.edu/admissions/oneStopShop/orientation/NewStudentOrientationProspectiveStudentExperience/CampusVisits/default.aspx" onClick="ga('send', 'event', { eventCategory: 'button', eventAction: 'clicked', eventLabel: 'freshmenscheduleavisit'});">
+                                        <div class="b-categories-icons__item_icon f-categories-icons__item_icon fade-in-animate">
+                                            <span class="fa fa-car"></span>
+                                        </div>
+                                        <div class="b-remaining b-categories-icons__item_text">
+                                            <div class="b-categories-icons__item_name f-categories-icons__item_name f-secondary-b">Schedule a Visit</div>
+                                            <div class="b-categories-icons__item_info f-categories-icons__item_info f-secondary-l">Come see what's in store for you.</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="b-categories-icons__item f-categories-icons__item b-column">
+                                    <a class="b-categories-icons__item_link" href="#scrollObj" onClick="ga('send', 'event', { eventCategory: 'button', eventAction: 'clicked', eventLabel: 'freshmenrequestinformation'});">
+                                        <div class="b-categories-icons__item_icon f-categories-icons__item_icon fade-in-animate">
+                                            <span class="fa fa-info"></span>
+                                        </div>
+                                        <div class="b-remaining b-categories-icons__item_text">
+                                            <div class="b-categories-icons__item_name f-categories-icons__item_name f-secondary-b">Request Info</div>
+                                            <div class="b-categories-icons__item_info f-categories-icons__item_info f-secondary-l">Let us know what you're interested in.</div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            </div>
+            </div>
+            <!-- Inner Page End -->
+            <script src="js_RES/breakpoints.js"></script>
+            <!-- bootstrap -->
+            <script src="js_RES/scrollspy.js"></script>
+            <script src="js_RES/bootstrap-progressbar/bootstrap-progressbar.js"></script>
+            <script src="js_RES/bootstrap.min.js"></script>
+            <!-- end bootstrap -->
+            <script src='js_RES/imagesloaded.pkgd.min.js'></script>
+            <!-- bxslider -->
+            <script src="js_RES/bxslider/jquery.bxslider.min.js"></script>
+            <!-- end bxslider -->
+            <script src="js_RES/rs-plugin/js/jquery.themepunch.plugins.min.js"></script>
+            <script src="js_RES/rs-plugin/js/jquery.themepunch.revolution.js"></script>
+            <!-- jquery ui -->
+            <script src="js_RES/jqueryui/jquery-ui.js"></script>
+            <!-- end jquery ui -->
+            <!-- <script src="js/modules/sliders.js"></script>  -->
+            <script src="js_RES/modules/ui.js"></script>
+            <script src="js_RES/modules/retina.js"></script>
+            <script src="js_RES/modules/settings.js"></script>
+            <script src="js_RES/modules/color-themes.js"></script>
+            <!-- End Modules -->
+            <script src="js_RES/j.placeholder.js"></script>
+            <!-- Fancybox -->
+            <script src="js_RES/fancybox/jquery.fancybox.pack.js"></script>
+            <!-- <script src="js/fancybox/jquery.mousewheel.pack.js"></script> 
+<script src="js/fancybox/jquery.fancybox.custom.js"></script>  -->
+            <!-- End Fancybox -->
+            <script src="js_RES/user.js"></script>
+            <script src="js_RES/timeline.js"></script>
+            <script src="js_RES/fontawesome-markers.js"></script>
+            <script src="js_RES/markerwithlabel.js"></script>
+            <script src="js_RES/cookie.js"></script>
+            <script src="js_RES/loader.js"></script>
+            <script src="js_RES/scrollIt/scrollIt.min.js"></script>
+            <script src="js_RES/modules/navigation-slide.js"></script>
+            <!-- smooth-scroll -->
+            <script src="js_RES/smooth-scroll/SmoothScroll.js"></script>
+            <!-- end smooth-scroll -->
+            <!--<script src="js_RES/custom.js"></script>-->
+            <script type="text/javascript">
+            jQuery(document).ready(function($) {
+                $(window).load(function() {
+                    $("#requestForm").load("RequestForm.html");
+                });
+            });
+            </script>
+</body>
+
+</html>
